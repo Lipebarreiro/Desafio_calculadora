@@ -1,8 +1,12 @@
 programa {
   funcao inicio() {
     
-    real num01, num02, total
-    real operador
+    cadeia continuar = "sim"
+
+    enquanto (continuar == "sim") {
+      cadeia operador
+      real num01, num02
+    
 
     escreva("Digite o primeiro valor: ")
     leia(num01)
@@ -15,21 +19,23 @@ programa {
     escreva("\n 2 - Subtracao;")
     escreva("\n 3 - Multiplicacao;")
     escreva("\n 4 - Divisao;")
-
     escreva("\nSelecione o tipo de operacao: ")
     leia(operador)
 
-    se(operador == 1)
-      escreva("\n",num01," + ",num02," = ",num01+num02)
+    se(operador == 1) {
+      escreva("\n",num01," + ",num02," = ",num01+num02,"\n")
 
-      se(operador == 2)
-      escreva("\n",num01," - ",num02," = ",num01-num02)
+    } senao  se(operador == 2) {
+      escreva("\n",num01," - ",num02," = ",num01-num02,"\n")
 
-    se(operador == 3)
-      escreva("\n",num01," x ",num02," = ",num01*num02)
+    } senao se(operador == 3) {
+      escreva("\n",num01," x ",num02," = ",num01*num02,"\n")
 
-    se(operador == 4)
-      escreva("\n",num01," / ",num02," = ",num01/num02)
-
+    } senao se(operador == 4) {
+      escreva("\n",num01," / ",num02," = ",num01/num02,"\n")
+    }
+    escreva ("\n Deseja continuar? (sim/não)")
+    leia(continuar)
+    }
   }
 }
