@@ -1,3 +1,5 @@
 # Desafio_calculadora
-Algoritimo de calculadora utilizando 4 operações básicas 
-Feito através do Portugol
+Algoritimo de uma calculadora com as 4 operações triviais 
+Utilizando a linguagem de programação Portugol
+
+
